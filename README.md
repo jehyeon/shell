@@ -8,26 +8,27 @@ shell 프로그래밍 공부 및 리마인딩을 위해 작성했습니다.
 쉘 스크립트는 유닉스 명령어들의 집합이므로 유닉스 명령어에 대한 어느정도의 숙지가 필요합니다.
 
 **자주 사용되는 유닉스 명령**
-*표기된 명령어 테스트 해보기
-command|comment
--|-
-echo "Hello world"|Hello world를 화면에 출력
-wc -l file|파일의 라인 수
-cp sourefile destfile|sourcefile을 destfile로 복사
-mv oldname newname|파일 이름을 바꾸거나 파일 이동
-rm file|파일 지우기
-grep 'pattern' file|파일에서 pattern 문자열 찾기
-*cub -b colum file|파일에서 문자열을 colum 단위로 보여줌
-cat file|파일을 표준출력(stdout)
-file somefile|somefile의 파일 타입 확인
-read var|입력 값을 변수명 var에 대입
-*uniq|파일에서 중복되는 문자열 삭제
-*tee|표준출력되는 정보를 파일로 쓰기
-basename file|디렉토리 명을 제외한 파일 이름 확인
-dirname file|파일 이름을 제외한 디렉토리 경로 확인
-head file|파일의 처음 몇 라인 출력
-tail file|파일의 마지막 몇 라인 출력
-*sed|정규표현에 의한 문자열 검색 및 치환에 사용
+*표기된 명령어 테스트 해보
+기
+command                 | comment
+------------------------|----------------------------------
+echo "Hello world"      | Hello world를 화면에 출력
+wc -l file              | 파일의 라인 수
+cp sourefile destfile   | sourcefile을 destfile로 복사
+mv oldname newname      | 파일 이름을 바꾸거나 파일 이동
+rm file                 | 파일 지우기
+grep 'pattern' file     | 파일에서 pattern 문자열 찾기
+*cub -b colum file      | 파일에서 문자열을 colum 단위로 보여줌
+cat file                | 파일을 표준출력(stdout)
+file somefile           | somefile의 파일 타입 확인
+read var                | 입력 값을 변수명 var에 대입
+*uniq                   | 파일에서 중복되는 문자열 삭제
+*tee                    | 표준출력되는 정보를 파일로 쓰기
+basename file           | 디렉토리 명을 제외한 파일 이름 확인
+dirname file            | 파일 이름을 제외한 디렉토리 경로 확인
+head file               | 파일의 처음 몇 라인 출력
+tail file               | 파일의 마지막 몇 라인 출력
+*sed                    | 정규표현에 의한 문자열 검색 및 치환에 사용
 
 ### ?. pipes와 redirection
 `pipes(|)`는 하나의 프로그램을 실행시켜 발생된 표준출력 데이터를 다른 프로그램의 표준입력으로 쓰고자 할 때 사용된다.
